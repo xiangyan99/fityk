@@ -104,12 +104,10 @@ private:
 
     char* return_buf(int n)
     {
-        // we don't need '\n' at all
         if (n > 0 && buf_[n-1] == '\n')
             buf_[n-1] = '\0';
         return n == -1 ? NULL : buf_;
     }
-
 };
 
 
@@ -255,7 +253,7 @@ private:
 
 void UserInterface::exec_fityk_script(const string& filename)
 {
-    user_interrupt = false;
+    user_interrupt = 0;
 
     boost::scoped_ptr<FileOpener> opener;
     if (endswith(filename, ".gz"))

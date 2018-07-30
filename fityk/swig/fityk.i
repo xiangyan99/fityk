@@ -14,6 +14,9 @@
 #pragma clang diagnostic ignored "-Wc++98-compat-pedantic"
 #pragma clang diagnostic ignored "-Wconditional-uninitialized"
 #endif
+#ifdef __GNUC__
+#pragma GCC diagnostic ignored "-Wshadow"
+#endif
 %}
 
 #if defined(SWIGPERL)
@@ -158,10 +161,6 @@ namespace std {
         if (!PyCallable_Check($1))
             SWIG_exception(SWIG_TypeError,"Expected function.");
     }
-
-    /* we had problem with user_interrupt, see
-       https://github.com/swig/swig/issues/629 */
-    %apply int { std::sig_atomic_t };
 
     #define FITYK_API // empirical workaround that makes SWIG 2.0.8 work
     %{

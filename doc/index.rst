@@ -39,7 +39,7 @@ and nonlinear **curve fitting**.
 
 Primarily used
 
-* by scientists (150 citations in 2014 alone)
+* by scientists_
   who analyse data from powder diffraction, chromatography,
   photoluminescence and photoelectron spectroscopy,
   infrared and Raman spectroscopy, and other experimental techniques,
@@ -49,7 +49,9 @@ Primarily used
 * to fit peaks -- bell-shaped functions (Gaussian, Lorentzian, Voigt,
   Pearson VII, bifurcated Gaussian, EMG, Doniach-Sunjic, etc.),
 
-but the program is suitable for fitting any curve to 2D (*x*,\ *y*) data.
+but it is suitable for fitting any curve to 2D (*x*,\ *y*) data.
+
+.. _scientists: https://scholar.google.com/scholar?cites=1686729773533771289
 
 .. _contents:
 
@@ -81,7 +83,7 @@ Features
   with reference datasets from NIST,
 * an add-on for powder diffraction data (Pawley refinement)
 * modular :wiki:`architecture <Architecture>`,
-* open source licence (`GPL <http://creativecommons.org/licenses/GPL/2.0/>`_).
+* open source licence (GPLv2+).
 
 .. _Download:
 
@@ -92,9 +94,9 @@ In an attempt to make this software self-sustaining and actively
 developed in the future,
 `new binaries </subscribers>`_ are available to subscribers only:
 
-|ico-win| MS Windows: :download:`-setup.exe`  $
+|ico-win| MS Windows: :subscribers_download:`-setup.exe`  $
 
-|ico-osx| Mac OS X (10.6 or later): :download:`-osx.zip`  $
+|ico-osx| Mac OS X (10.6 or later): :subscribers_download:`-osx.zip`  $
 
 |ico-tux| Linux: binary `RPM and deb packages </subscribers>`_
 :smallfont:`for about 10 distros (incl. Ubuntu, Fedora, Suse), 32- and 64-bit.`
@@ -133,9 +135,8 @@ and Linux (Ubuntu PPA_ and RPMs from OBS_).
 
 Source code: `GitHub <https://github.com/wojdyr/fityk>`_
 (`releases <https://github.com/wojdyr/fityk/releases>`_)
-:html:`<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;" href="http://fityk.nieto.pl"></a>`
 
-Version 1.3.0 was released on 2015-05-25
+Version 1.3.1 was released on 2016-12-19
 (`changelog <https://github.com/wojdyr/fityk/raw/master/NEWS>`_).
 New version `notifications <http://fityk-announce.nieto.pl/>`_
 are delivered via email and feeds.
@@ -203,13 +204,6 @@ or, if it already is in the list, in assigning higher priority to it.
       location.href = $(this).attr("href") + "?u=" + reply;
   });
 
-     var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-     s.type = 'text/javascript';
-     s.async = true;
-     s.src = 'http://api.flattr.com/js/0.6/load.js?mode=auto';
-     t.parentNode.insertBefore(s, t);
-
    });
    //--> </script>
-
 
